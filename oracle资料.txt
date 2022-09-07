@@ -1,0 +1,56 @@
+oracle登录：
+zhangzhenkun186@163.com
+AiZhuZhu#5211314
+
+oracle数据库-orcl
+口令:orcl 
+
+==
+亲~收货了~
+以下是您订购的订单2859450771671254218的内容请注意查收：
+
+#####PLSQL14永久激活码
+产品编号：4w4tvyubbe2xhab2n8d3mnns6dmm7mlg9b
+序列号：212617
+蜜马：xs374ca
+
+#####PLSQL15永久激活码
+产品编号：kequvwhwj9lv77v6pnacmxcxnq94bl7l
+序列号：105595
+蜜马：xs374ca
+==
+
+一、oracle 19c用户：
+sys change_on_install  sysdba
+system no authentication sysdba
+
+二、oracle 19c创建用户：
+1.运行-cmd-sqlplus / as sysdba
+2.SQL> create user zzk123 identified by zzk;
+3.授权：
+SQL> grant dba,connect,resource,create view to zzk;
+SQL> grant create session to zzk;
+SQL> grant select any table to zzk;
+SQL> grant update any table to zzk;
+SQL> grant insert any table to zzk;
+SQL> grant delete any table to zzk;
+
+三.oracle 19c 创建数据库
+1.运行DataBase Configuration Assistant 
+2.创建数据库
+3.高级配置
+4.一般用途或事务处理
+5.所有账户使用同一管理口令：zzk
+
+四、监听服务报错-重新配置
+运行Net Configuration Assistant 
+
+Oracle错误：ORA-01843：无效月份的问题:
+SIMPLIFIED CHINESE
+
+ALTER SESSION SET NLS_DATE_LANGUAGE='AMERICAN';
+
+SELECT * FROM nls_session_parameters WHERE parameter = 'NLS_DATE_LANGUAGE';
+
+
+
